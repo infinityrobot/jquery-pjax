@@ -36,7 +36,7 @@ $.fn.pjax = function( container, options ) {
       return true
 
     var defaults = {
-      url: this.href,
+      url: $(this).attr('html'),
       container: $(this).attr('data-pjax')
     }
 
